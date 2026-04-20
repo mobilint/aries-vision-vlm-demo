@@ -1,0 +1,22 @@
+{
+  "appTitle": "Vision & VLM Powered by ARIES",
+  "imagePanelTitle": "画像を選択",
+  "chatPanelTitle": "画像について質問する",
+  "detectionThresholdLabel": "検知スコアしきい値",
+  "systemMetricsButton": "システム状態",
+  "systemMetricsTitle": "システムテレメトリ",
+  "systemMetricsDescription": "現在のCPU/NPU温度、使用率、消費電力を表示します。",
+  "systemMetricsUpdatedAt": "最終更新",
+  "autoLabel": "自動",
+  "inputPlaceholder": "例: 画像には何人いますか？",
+  "reset": "リセット",
+  "liveCam": "ライブカメラ",
+  "screenshot": "スクリーンショット",
+  "galleryHint": "またはギャラリーから画像を選択してください",
+  "galleryTitle": "ギャラリー",
+  "languageLabel": "言語",
+  "statusConnecting": "バックエンドに接続中...",
+  "statusPreparingPromptBundle": "プロンプトバンドルを準備中...",
+  "statusWaitingForDetection": "武器検知を待機中...",
+  "statusWaitingForManualSelection": "手動推論を始めるには映像チャンネルをクリックしてください。"
+}

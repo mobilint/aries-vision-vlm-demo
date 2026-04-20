@@ -1,0 +1,25 @@
+image_layout:
+  - path: ../rc/layout/layout.png
+    roi: [0, 0, 640, 752]
+
+worker_layout:
+  # Grid: 2 cols x 4 rows, preserving the original tile size and spacing
+  # top margin: 0
+  # col width: 320
+  # row height: 188
+
+  # Row 1 (y: 0, h: 188)
+  - {feeder_index: 0, model_index: 0, roi: [0, 0, 320, 188]}
+  - {feeder_index: 1, model_index: 0, roi: [320, 0, 320, 188]}
+
+  # Row 2 (y: 188, h: 188)
+  - {feeder_index: 2, model_index: 0, roi: [0, 188, 320, 188]}
+  - {feeder_index: 3, model_index: 0, roi: [320, 188, 320, 188]}
+
+  # Row 3 (y: 376, h: 188)
+  - {feeder_index: 4, model_index: 0, roi: [0, 376, 320, 188]}
+  - {feeder_index: 5, model_index: 0, roi: [320, 376, 320, 188]}
+
+  # Row 4 (y: 564, h: 188)
+  - {feeder_index: 6, model_index: 0, roi: [0, 564, 320, 188]}
+  - {feeder_index: 7, model_index: 0, roi: [320, 564, 320, 188]}

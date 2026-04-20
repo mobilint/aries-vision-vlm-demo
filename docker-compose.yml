@@ -1,0 +1,73 @@
+# You can add server-side setting whatever you want according to the
+# proper operation server side environment.
+#
+networks:
+  mblt_int:
+    external: true
+
+services:
+  aries_vision_vlm_frontend:
+    build:
+      context: ./frontend
+      dockerfile: frontend.Dockerfile
+
+    hostname: aries-vision-vlm-frontend
+
+    volumes:
+      - ./frontend:/app
+      - node_modules:/app/node_modules
+      - next:/app/.next
+
+    ports:
+      - 3000:3000
+
+    networks:
+      - mblt_int
+
+  aries_vision_vlm_backend_vlm:
+    build:
+      context: ./backend_vlm
+      dockerfile: backend.Dockerfile
+
+    hostname: aries-vision-vlm-backend-vlm
+
+    privileged: true
+
+    environment:
+      - HF_HUB_OFFLINE=1
+
+    volumes:
+      - ./backend_vlm/src:/src
+      - ${HOME}/.cache/huggingface:/root/.cache/huggingface
+      - /dev:/dev
+
+    ports:
+      - 5000:5000
+
+    networks:
+      - mblt_int
+  
+  aries_vision_vlm_backend_vision:
+    build:
+      context: ./backend_vision
+      dockerfile: vision.Dockerfile
+    
+    hostname: aries-vision-vlm-backend-vision
+
+    privileged: true
+
+    volumes:
+      - ./backend_vision/build:/workspace/build:ro
+      - ./backend_vision/rc:/workspace/rc:ro
+      - ./backend_vision/mxq:/workspace/mxq:ro
+      - /dev:/dev
+
+    ports:
+      - 8081:8081
+
+    networks:
+      - mblt_int
+
+volumes:
+  node_modules:
+  next:

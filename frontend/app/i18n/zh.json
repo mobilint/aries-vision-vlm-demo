@@ -1,0 +1,22 @@
+{
+  "appTitle": "Vision & VLM Powered by ARIES",
+  "imagePanelTitle": "选择图片",
+  "chatPanelTitle": "针对图片提问",
+  "detectionThresholdLabel": "检测分数阈值",
+  "systemMetricsButton": "系统状态",
+  "systemMetricsTitle": "系统遥测",
+  "systemMetricsDescription": "显示当前 CPU/NPU 温度、使用率和功耗。",
+  "systemMetricsUpdatedAt": "最后更新",
+  "autoLabel": "自动",
+  "inputPlaceholder": "例如：图片中有多少人？",
+  "reset": "重置",
+  "liveCam": "实时摄像头",
+  "screenshot": "截图",
+  "galleryHint": "或从图库中选择一张图片",
+  "galleryTitle": "图库",
+  "languageLabel": "语言",
+  "statusConnecting": "正在连接后端...",
+  "statusPreparingPromptBundle": "正在准备提示词包...",
+  "statusWaitingForDetection": "正在等待武器检测...",
+  "statusWaitingForManualSelection": "点击视频通道即可开始手动推理。"
+}

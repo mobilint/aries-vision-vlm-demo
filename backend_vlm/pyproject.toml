@@ -1,0 +1,15 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flask",
+    "flask-socketio",
+    "mblt-model-zoo[transformers]==1.3.0",
+    "mblt-tracker>=0.1.0",
+]
+
+[tool.black]
+line-length = 120
