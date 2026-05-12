@@ -1,0 +1,22 @@
+{
+  "appTitle": "Vision & VLM Powered by ARIES",
+  "imagePanelTitle": "Select Your Image",
+  "chatPanelTitle": "Ask About The Image",
+  "detectionThresholdLabel": "Detection Score Threshold",
+  "systemMetricsButton": "System Status",
+  "systemMetricsTitle": "System Telemetry",
+  "systemMetricsDescription": "Current CPU and NPU temperature, utilization, and power draw.",
+  "systemMetricsUpdatedAt": "Last update",
+  "autoLabel": "Auto",
+  "inputPlaceholder": "e.g. How many people are in the image?",
+  "reset": "Reset",
+  "liveCam": "Live Cam",
+  "screenshot": "Screenshot",
+  "galleryHint": "Or pick an image from the gallery",
+  "galleryTitle": "Gallery",
+  "languageLabel": "Language",
+  "statusConnecting": "Connecting to backend...",
+  "statusPreparingPromptBundle": "Preparing prompt bundle...",
+  "statusWaitingForDetection": "Waiting for weapon detection...",
+  "statusWaitingForManualSelection": "Click a video channel to start manual inference."
+}

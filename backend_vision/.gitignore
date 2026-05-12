@@ -1,0 +1,12 @@
+build*
+.vscode
+.clang-format
+.cmake-format.yaml
+.pre-commit-config.yaml
+
+TODO.md
+MONITORING.md
+
+# Large vision assets are downloaded from Hugging Face by download.sh/download.bat.
+assets/mxq/*.mxq
+assets/video/**/*.mp4

@@ -1,0 +1,16 @@
+- feeder_type: VIDEO
+  src_path: ../assets/video/negative/8.mp4
+- feeder_type: VIDEO
+  src_path: ../assets/video/positive/15.mp4
+- feeder_type: VIDEO
+  src_path: ../assets/video/negative/3.mp4
+- feeder_type: VIDEO
+  src_path: ../assets/video/positive/13.mp4
+- feeder_type: VIDEO
+  src_path: ../assets/video/negative/5.mp4
+- feeder_type: VIDEO
+  src_path: ../assets/video/positive/18.mp4
+- feeder_type: VIDEO
+  src_path: ../assets/video/positive/11.mp4
+- feeder_type: VIDEO
+  src_path: ../assets/video/negative/2.mp4
