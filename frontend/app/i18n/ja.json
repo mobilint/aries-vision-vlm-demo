@@ -1,0 +1,20 @@
+{
+  "appTitle": "Vision & VLM Powered by ARIES",
+  "imagePanelTitle": "画像を選択",
+  "weaponPanelTitle": "武器検出",
+  "fallPanelTitle": "転倒検出",
+  "detectionThresholdLabel": "検知スコアしきい値",
+  "systemMetricsButton": "システム状態",
+  "systemMetricsTitle": "システムテレメトリ",
+  "systemMetricsDescription": "現在のCPU/NPU温度、使用率、消費電力を表示します。",
+  "systemMetricsUpdatedAt": "最終更新",
+  "autoLabel": "自動",
+  "vlmModelLabel": "VLMモデル",
+  "vlmModelSwitchingStatus": "VLMモデルを切り替え中...",
+  "vlmModelSwitchFailedStatus": "VLMモデルの切り替えに失敗しました。",
+  "statusConnecting": "バックエンドに接続中...",
+  "statusPreparingPromptBundle": "プロンプトバンドルを準備中...",
+  "statusAnswerHold": "分析完了 — 結果を1秒間表示してから次の検知を分析します",
+  "statusWaitingForDetection": "検出待機中...",
+  "statusWaitingForManualSelection": "手動推論を始めるには映像チャンネルをクリックしてください。"
+}

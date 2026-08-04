@@ -1,0 +1,15 @@
+build
+build*
+.vscode
+.git
+.gitignore
+.gitattributes
+.clang-format
+.cmake-format.yaml
+.pre-commit-config.yaml
+TODO.md
+MONITORING.md
+
+# Vision assets are downloaded from Hugging Face and mounted at runtime.
+# Exclude them from Docker build context to avoid copying large files into cache.
+assets/

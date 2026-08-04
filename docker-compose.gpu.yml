@@ -1,0 +1,18 @@
+name: gpu
+
+services:
+  aries_vision_vlm_backend_vlm_weapon:
+    build:
+      dockerfile: backend-gpu.Dockerfile
+    image: aries-vision-vlm-backend-vlm-gpu:latest
+    environment:
+      - HF_HUB_OFFLINE=0
+    gpus: all
+
+  aries_vision_vlm_backend_vlm_fall:
+    build:
+      dockerfile: backend-gpu.Dockerfile
+    image: aries-vision-vlm-backend-vlm-gpu:latest
+    environment:
+      - HF_HUB_OFFLINE=0
+    gpus: all

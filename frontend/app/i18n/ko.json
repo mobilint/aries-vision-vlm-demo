@@ -1,0 +1,20 @@
+{
+  "appTitle": "Vision & VLM Powered by ARIES",
+  "imagePanelTitle": "이미지 선택",
+  "weaponPanelTitle": "무기 감지",
+  "fallPanelTitle": "낙상 감지",
+  "detectionThresholdLabel": "탐지 점수 임계값",
+  "systemMetricsButton": "시스템 상태",
+  "systemMetricsTitle": "시스템 텔레메트리",
+  "systemMetricsDescription": "현재 CPU와 NPU의 온도, 사용률, 전력 소모를 표시합니다.",
+  "systemMetricsUpdatedAt": "마지막 갱신",
+  "autoLabel": "자동",
+  "vlmModelLabel": "VLM 모델",
+  "vlmModelSwitchingStatus": "VLM 모델을 전환하는 중...",
+  "vlmModelSwitchFailedStatus": "VLM 모델 전환에 실패했습니다.",
+  "statusConnecting": "백엔드에 연결하는 중...",
+  "statusPreparingPromptBundle": "프롬프트 번들을 준비하는 중...",
+  "statusAnswerHold": "분석 완료 — 결과를 1초간 표시한 뒤 다음 감지를 분석합니다",
+  "statusWaitingForDetection": "감지 대기 중...",
+  "statusWaitingForManualSelection": "수동 추론을 시작하려면 영상 채널을 클릭하세요."
+}
