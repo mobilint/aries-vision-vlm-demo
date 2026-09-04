@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Vision VLM
+Icon=vision-vlm-demo.png
+Type=Application
+Exec=/usr/bin/env bash -lc 'cd "$HOME/aries-vision-vlm-demo" && ./run.sh'
+Terminal=false
+X-GNOME-Autostart-enabled=true

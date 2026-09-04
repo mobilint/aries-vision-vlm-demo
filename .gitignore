@@ -1,0 +1,13 @@
+.vscode/
+__pycache__/
+.env
+uv.lock
+.hf_venv/
+.hf_upload_venv/
+backend_vlm/eval/cases/
+backend_vlm/eval/results/
+backend_vlm/eval/.venv/
+
+# Auto-generated at run.sh startup from core_allocation.<N>card.yaml
+# based on the detected MLA100 card count. Do not commit.
+core_allocation.yaml

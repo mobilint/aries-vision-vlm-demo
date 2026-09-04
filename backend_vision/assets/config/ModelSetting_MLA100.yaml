@@ -1,0 +1,30 @@
+- model_type: YOLO26
+  category: weapon
+  mxq_path: ../assets/mxq/yolo26s-weapon_uint8_input_260513.mxq
+  labels: [gun, knife]
+  pipeline_config:
+    labels: [gun, knife]
+    conf_threshold: 0.25
+    iou_threshold: 0.45
+    display_confidence_threshold: 0.25
+    bbox_thickness: 2
+    draw_label_text: true
+    draw_score_text: true
+    draw_detection_border: true
+  dev_no: 0
+
+- model_type: YOLO26
+  category: fall
+  mxq_path: ../assets/fall/mxq/yolo26s-fall-detection-uint8-260521.mxq
+  labels: [falling, standing, sitting]
+  pipeline_config:
+    labels: [falling, standing, sitting]
+    conf_threshold: 0.25
+    iou_threshold: 0.45
+    display_confidence_threshold: 0.25
+    bbox_thickness: 2
+    draw_label_text: true
+    draw_score_text: true
+    draw_detection_border: true
+    allowed_label_names: ["falling"]
+  dev_no: 0
