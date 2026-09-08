@@ -1,0 +1,16 @@
+{
+  "appTitle": "Vision & VLM Powered by ARIES",
+  "imagePanelTitle": "选择图片",
+  "weaponPanelTitle": "武器检测",
+  "fallPanelTitle": "跌倒检测",
+  "detectionThresholdLabel": "检测分数阈值",
+  "autoLabel": "自动",
+  "vlmModelLabel": "VLM 模型",
+  "vlmModelSwitchingStatus": "正在切换 VLM 模型...",
+  "vlmModelSwitchFailedStatus": "VLM 模型切换失败。",
+  "statusConnecting": "正在连接后端...",
+  "statusPreparingPromptBundle": "正在准备提示词包...",
+  "statusAnswerHold": "分析完成 — 结果显示1秒后将分析下一次检测",
+  "statusWaitingForDetection": "等待检测...",
+  "statusWaitingForManualSelection": "点击视频通道即可开始手动推理。"
+}

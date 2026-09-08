@@ -1,0 +1,27 @@
+# MLA100 x 1 (single card). One Aries card exposes 2 clusters x 4 cores = 8
+# cores on dev_no 0. Cluster 0 runs YOLO vision (multi-threaded, 2 cores per
+# category); cluster 1 runs the two VLM submodules pinned to one core each.
+# No card-2 fallback: every entry pins to dev_no 0.
+
+vision:
+  weapon:
+    - {dev_no: 0, cluster: 0, core: 0}
+    - {dev_no: 0, cluster: 0, core: 1}
+  fall:
+    - {dev_no: 0, cluster: 0, core: 2}
+    - {dev_no: 0, cluster: 0, core: 3}
+vlm:
+  weapon:
+    vision_dev_no: 0
+    vision_target_cores: ["1:0"]
+    text_dev_no: 0
+    text_target_cores: ["1:1"]
+    vision_core_mode: "single"
+    text_core_mode: "single"
+  fall:
+    vision_dev_no: 0
+    vision_target_cores: ["1:2"]
+    text_dev_no: 0
+    text_target_cores: ["1:3"]
+    vision_core_mode: "single"
+    text_core_mode: "single"
