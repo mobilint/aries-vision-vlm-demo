@@ -1,0 +1,39 @@
+# MLA100 x 2 (dual card). Each Aries card exposes 2 clusters x 4 cores = 8
+# cores; two cards give 16 cores split across dev_no 0 and 1.
+#
+# Layout (disjoint, option A - avoids context switching between YOLO threads
+# and single-request VLM submodules):
+#   Card 0 (dev_no 0): all vision - weapon on cluster 0 (4 cores), fall on
+#                      cluster 1 (4 cores). YOLO is multi-threaded, so each
+#                      category gets a full cluster to itself.
+#   Card 1 (dev_no 1): all VLM  - vlm.weapon and vlm.fall each pin their
+#                      vision encoder / text decoder to disjoint cores on
+#                      cluster 0. Cluster 1 on card 1 is left idle; VLM is
+#                      request-driven and cannot productively saturate more.
+
+vision:
+  weapon:
+    - {dev_no: 0, cluster: 0, core: 0}
+    - {dev_no: 0, cluster: 0, core: 1}
+    - {dev_no: 0, cluster: 0, core: 2}
+    - {dev_no: 0, cluster: 0, core: 3}
+  fall:
+    - {dev_no: 0, cluster: 1, core: 0}
+    - {dev_no: 0, cluster: 1, core: 1}
+    - {dev_no: 0, cluster: 1, core: 2}
+    - {dev_no: 0, cluster: 1, core: 3}
+vlm:
+  weapon:
+    vision_dev_no: 1
+    vision_target_cores: ["0:0"]
+    text_dev_no: 1
+    text_target_cores: ["0:1"]
+    vision_core_mode: "single"
+    text_core_mode: "single"
+  fall:
+    vision_dev_no: 1
+    vision_target_cores: ["0:2"]
+    text_dev_no: 1
+    text_target_cores: ["0:3"]
+    vision_core_mode: "single"
+    text_core_mode: "single"
