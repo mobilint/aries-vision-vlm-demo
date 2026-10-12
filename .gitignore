@@ -1,0 +1,9 @@
+.vscode/
+__pycache__/
+.env
+uv.lock
+.hf_venv/
+.hf_upload_venv/
+backend_vlm/eval/cases/
+backend_vlm/eval/results/
+backend_vlm/eval/.venv/

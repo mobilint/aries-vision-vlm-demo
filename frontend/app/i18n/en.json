@@ -1,0 +1,20 @@
+{
+  "appTitle": "Vision & VLM Powered by ARIES",
+  "imagePanelTitle": "Select Your Image",
+  "weaponPanelTitle": "Weapon Detection",
+  "fallPanelTitle": "Fall Detection",
+  "detectionThresholdLabel": "Detection Score Threshold",
+  "systemMetricsButton": "System Status",
+  "systemMetricsTitle": "System Telemetry",
+  "systemMetricsDescription": "Current CPU and NPU temperature, utilization, and power draw.",
+  "systemMetricsUpdatedAt": "Last update",
+  "autoLabel": "Auto",
+  "vlmModelLabel": "VLM Model",
+  "vlmModelSwitchingStatus": "Switching VLM model...",
+  "vlmModelSwitchFailedStatus": "Failed to switch VLM model.",
+  "statusConnecting": "Connecting to backend...",
+  "statusPreparingPromptBundle": "Preparing prompt bundle...",
+  "statusAnswerHold": "Analysis complete — holding the result for 1s, then analyzing the next detection",
+  "statusWaitingForDetection": "Waiting for detection...",
+  "statusWaitingForManualSelection": "Click a video channel to start manual inference."
+}
