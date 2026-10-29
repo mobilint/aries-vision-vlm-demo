@@ -1,0 +1,3 @@
+# Vision assets are downloaded from mobilint/aries-weapon-detection-demo-assets
+# into backend_vision/assets via download.sh/download.bat.
+# Do not track them with Git LFS.
